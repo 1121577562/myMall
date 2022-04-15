@@ -23,4 +23,5 @@ export function request(config) {
     })
 
     // 3.发送真正的网络请求 (axios实例本身返回的就是一个promise实例)
+    return axiosInstance(config);
 }

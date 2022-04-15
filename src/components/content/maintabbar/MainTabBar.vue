@@ -47,6 +47,10 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+  .mainTabbar {
+    position: relative;
+    z-index: 10;
+  }
 
 </style>
