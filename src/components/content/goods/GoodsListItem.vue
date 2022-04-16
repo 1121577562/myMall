@@ -1,5 +1,5 @@
 <template>
-  <div class="ListItem">
+  <div class="ListItem" @click="goodsItemClick">
     <div class="pic">
       <img :src="goodsItem.show.img" alt="" @load="imgLoad">
     </div>
@@ -30,6 +30,16 @@ export default {
     imgLoad() {
       this.$bus.$emit("imgLoad")
       // console.log("图片加载完成");
+    },
+
+    // 监听每个 goodsItem的点击，跳转到详情页面
+    goodsItemClick() {
+      this.$router.push({
+        path: "/detail",
+        query: {
+          iid: this.goodsItem.iid
+        }
+      });
     }
   }
 }

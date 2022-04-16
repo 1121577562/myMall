@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <main-tab-bar />
-    <keep-alive>
+    <!-- Detail页面不做缓存，因为每个详情页面的数据是不相同的 -->
+    <keep-alive exclude="Detail">
        <router-view/>
     </keep-alive>
   </div>

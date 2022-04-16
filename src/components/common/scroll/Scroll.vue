@@ -45,7 +45,7 @@ export default {
       // 向外发出一个上拉加载更多事件
       this.$emit("pullingUp");
     })
-    console.log(this.scroll);
+    // console.log(this.scroll);
   },
   methods: {
     // 1.当上拉加载更多数据后，告诉better-scroll，数据已经加载完成，进行下一次的加载

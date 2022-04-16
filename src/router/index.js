@@ -12,6 +12,10 @@ const Cart = () =>
 const Profile = () =>
     import ("views/profile/Profile.vue");
 
+const Detail = () =>
+    import ("views/detail/Detail.vue")
+
+
 
 
 //=> 1.安装插件
@@ -36,6 +40,10 @@ const routes = [{
     {
         path: "/profile",
         component: Profile
+    },
+    {
+        path: "/detail",
+        component: Detail
     }
 ];
 

@@ -104,14 +104,14 @@ export default {
   },
 
   activated() {
-    console.log("activated");
+    // console.log("activated");
     // 当前页面再次活跃时，重新设置 scrollY的值
     this.$refs.scroll.scrollTo(0, this.scrollHomeY, 0);
     this.$refs.scroll.refresh();
   },
 
   deactivated() {
-    console.log("deactivated");
+    // console.log("deactivated");
     // 保存离开时, scrollY的值
     this.scrollHomeY = this.$refs.scroll.getScrollY();
   },
@@ -164,7 +164,7 @@ export default {
     // 实现上拉加载更多数据
     pullingUp() {
       this.getHomeGoodsInMethods(this.currentType);
-      console.log("拉到底部了！！");
+      // console.log("拉到底部了！！");
     },
 
     // 监听页面的滚动，拿到y的值，从而决定是否显示回到顶部按钮
